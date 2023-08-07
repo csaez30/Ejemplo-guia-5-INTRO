@@ -1,0 +1,91 @@
+
+public static int fibonacciRecursivo(int n) {
+ 
+        //CASO BASE, si es cero devuelve un cero
+        //Puedes poner n<=0 tamvien para incluir negativos
+        if (n == 0) {
+            return 0;
+            //CASO BASE, si es 1 devuelve un 1    
+        } else if (n == 1) {
+            return 1;
+        } else {
+            //Hago la suma
+            return fibonacciRecursivo(n - 1) + fibonacciRecursivo(n - 2);
+        }
+ 
+}
+También os dejo la forma recursiva completo:
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+public class FibonacciRecursivo {
+ 
+    public static void main(String[] args) {
+       Scanner leer=new Scanner(System.in);
+         System.out.println("ingrese el n ");
+        serie = leer.nextInt();
+        int[] vector= new int[serie];
+        for (int i = 0; i < serie; i++) {
+            vector[i] = fibonacciRecursivo(i);
+            System.out.println(vector(i));
+        }
+ 
+    }
+ 
+    /**
+     * Devuelve el numero fibonacci dado su posicion
+     *
+     * @param n Posicion del numero fibonacci
+     * @return Numero de la lista de fibonacci
+     */
+    public static int fibonacciRecursivo(int n) {
+ 
+        //CASO BASE, si es cero devuelve un cero
+        //Puedes poner n<=0 tamvien para incluir negativos
+        if (n == 0) {
+            return 0;
+            //CASO BASE, si es 1 devuelve un 1    
+        } else if (n == 1) {
+            return 1;
+        } else {
+            //Hago la suma
+            return fibonacciRecursivo(n - 1) + fibonacciRecursivo(n - 2);
+        }
+ 
+    }
+ 
+}
